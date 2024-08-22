@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "275620689711",
+    "project_id": "bangkas-f8121",
+    "storage_bucket": "bangkas-f8121.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275620689711:android:ec44ccc30dc545bc2813da",
+        "android_client_info": {
+          "package_name": "com.bangkas.version2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUcIju8hM7VnE0gGdozlo0hZLUpm4qmiE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

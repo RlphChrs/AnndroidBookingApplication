@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".SelectDestination">
+
+    <LinearLayout
+        android:id="@+id/destBckBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#00308F"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/selDistBckBtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#00308F"
+            android:src="@drawable/backbtn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/destLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Where would you go?"
+        android:textColor="#000"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/destBckBtn" />
+
+    <EditText
+        android:id="@+id/currLocBtn"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/searchbox"
+        android:drawableEnd="@drawable/currloc"
+        android:drawablePadding="8dp"
+        android:hint="Current Location"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/activity_horizontal_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/currLoc"
+        app:layout_constraintTop_toBottomOf="@id/destLabel" />
+
+    <ImageView
+        android:id="@+id/currLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blue_currloc"
+        app:layout_constraintBottom_toBottomOf="@id/currLocBtn"
+        app:layout_constraintEnd_toStartOf="@id/currLocBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/currLocBtn" />
+
+    <EditText
+        android:id="@+id/pinLocBtn"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/searchbox"
+        android:drawableEnd="@drawable/pinloc"
+        android:drawablePadding="8dp"
+        android:hint="Destination"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@id/currLocBtn"
+        app:layout_constraintStart_toStartOf="@id/currLocBtn"
+        app:layout_constraintTop_toBottomOf="@id/currLocBtn" />
+
+    <ImageView
+        android:id="@+id/pinLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/blue_pinloc"
+        app:layout_constraintBottom_toBottomOf="@id/pinLocBtn"
+        app:layout_constraintEnd_toStartOf="@id/pinLocBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/pinLocBtn" />
+
+
+    <Button
+        android:id="@+id/submitDes"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_blue"
+        android:text="Book Now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinLocBtn" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/submitDes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

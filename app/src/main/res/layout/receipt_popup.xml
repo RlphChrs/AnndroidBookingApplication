@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/editbox_white"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/receiptTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Receipt"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/receiptCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Location: "
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/receiptUserDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Destination: "
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/receiptVessel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Vessel: "
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/receiptAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount: "
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/receiptPaymentMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Method: "
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/receiptCloseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Approve"
+        android:background="@drawable/btn_blue"
+        android:layout_marginTop="16dp"
+
+        android:layout_gravity="center" />
+</LinearLayout>

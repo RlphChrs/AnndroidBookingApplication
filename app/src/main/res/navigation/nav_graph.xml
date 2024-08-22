@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/userProfileFragment">
+
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.bangkas.version2.UserProfileFragment"
+        android:label="User Profile"
+        tools:layout="@layout/fragment_user_profile">
+        <action
+            android:id="@+id/action_userProfileFragment_to_editUserProfileFragment"
+            app:destination="@id/editUserProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editUserProfileFragment"
+        android:name="com.bangkas.version2.EditUserProfileFragment"
+        android:label="Edit User Profile"
+        tools:layout="@layout/fragment_edit_user_profile" />
+
+</navigation>

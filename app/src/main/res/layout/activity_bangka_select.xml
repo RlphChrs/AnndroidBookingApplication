@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BangkaSelect">
+
+    <LinearLayout
+        android:id="@+id/destBckBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#00308F"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#00308F"
+            android:id="@+id/bangkaBckBtn"
+            android:src="@drawable/backbtn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/labelOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Choose your vessel"
+        android:textColor="#000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/destBckBtn" />
+
+    <TextView
+        android:id="@+id/labelTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select the vessel you want to book with"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelOne" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vslOne"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/vessel"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelTwo">
+
+        <ImageView
+            android:id="@+id/vslLogoOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boatlogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/vesselTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="CSM Palais Royal"
+            android:textColor="#000"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@id/vslLogoOne"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/vslOnePers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 Person"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@id/vesselTitle"
+            app:layout_constraintTop_toBottomOf="@id/vesselTitle" />
+
+        <CheckBox
+            android:id="@+id/vslOneBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_checkbox"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500.00"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="@id/vslOnePers"
+            app:layout_constraintEnd_toStartOf="@id/vslOneBox"
+            app:layout_constraintTop_toTopOf="@id/vslOnePers" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vslTwo"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/vessel"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vslOne">
+
+        <ImageView
+            android:id="@+id/vslLogoTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boatlogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/vslTwoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Ever Aria"
+            android:textColor="#000"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@id/vslLogoTwo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/vslTwoPers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 Person"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@id/vslTwoTitle"
+            app:layout_constraintTop_toBottomOf="@id/vslTwoTitle" />
+
+        <CheckBox
+            android:id="@+id/vslTwoBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_checkbox"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="400.00"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="@id/vslTwoPers"
+            app:layout_constraintEnd_toStartOf="@id/vslTwoBox"
+            app:layout_constraintTop_toTopOf="@id/vslTwoPers" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vslThree"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/vessel"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vslTwo">
+
+        <ImageView
+            android:id="@+id/vslLogoThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boatlogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/vslThreeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="PB Acosta"
+            android:textColor="#000"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@id/vslLogoThree"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/vslThreePers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 Person"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@id/vslThreeTitle"
+            app:layout_constraintTop_toBottomOf="@id/vslThreeTitle" />
+
+        <CheckBox
+            android:id="@+id/vslThreeBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_checkbox"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="700.00"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="@id/vslThreePers"
+            app:layout_constraintEnd_toStartOf="@id/vslThreeBox"
+            app:layout_constraintTop_toTopOf="@id/vslThreePers" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vslFour"
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/vessel"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vslThree">
+
+        <ImageView
+            android:id="@+id/vslLogoFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boatlogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/vslFourTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="PB Delgado"
+            android:textColor="#000"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@id/vslLogoFour"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/vslFourPers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4 Person"
+            android:textColor="#000"
+            app:layout_constraintStart_toStartOf="@id/vslFourTitle"
+            app:layout_constraintTop_toBottomOf="@id/vslFourTitle" />
+
+        <CheckBox
+            android:id="@+id/vslFourBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/custom_checkbox"
+            android:scaleX=".6"
+            android:scaleY=".6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500.00"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="@id/vslFourPers"
+            app:layout_constraintEnd_toStartOf="@id/vslFourBox"
+            app:layout_constraintTop_toTopOf="@id/vslFourPers" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_blue"
+        android:id="@+id/bangkaSelConfirm"
+        android:text="Continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vslFour" />
+</androidx.constraintlayout.widget.ConstraintLayout>

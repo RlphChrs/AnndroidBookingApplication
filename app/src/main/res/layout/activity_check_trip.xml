@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckTrip">
+
+    <LinearLayout
+        android:id="@+id/tripBckBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#00308F"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/tripBck"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="#00308F"
+            android:src="@drawable/backbtn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="662dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/checktripbg"
+        app:layout_constraintTop_toBottomOf="@id/tripBckBtn" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/searchbox"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tripLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trip to destination"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tripLabel" />
+
+        <EditText
+            android:id="@+id/vesselDeets"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/searchbox"
+            android:drawableLeft="@drawable/boatchat"
+            android:drawableRight="@drawable/chatrating"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="10dp"
+            android:text="    CGM Palais Royal"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line" />
+
+        <TextView
+            android:id="@+id/chkCurrLoc"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_btn"
+            android:drawableRight="@drawable/white_currloc_cthru"
+            android:text="CurrentLocation"
+            app:layout_constraintEnd_toEndOf="@id/vesselDeets"
+            app:layout_constraintTop_toBottomOf="@id/vesselDeets" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/blue_currloc"
+            android:id="@+id/currLocIcon"
+            app:layout_constraintBottom_toBottomOf="@id/chkCurrLoc"
+            app:layout_constraintStart_toStartOf="@id/vesselDeets"
+            app:layout_constraintTop_toTopOf="@id/chkCurrLoc" />
+        <TextView
+            android:id="@+id/pinLoc"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_btn"
+            android:drawableRight="@drawable/pinloc"
+            android:text="Santa Rosa Port"
+            app:layout_constraintEnd_toEndOf="@id/chkCurrLoc"
+            app:layout_constraintTop_toBottomOf="@id/chkCurrLoc" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pinloc"
+            app:layout_constraintBottom_toBottomOf="@id/pinLoc"
+            app:layout_constraintStart_toStartOf="@id/vesselDeets"
+            app:layout_constraintEnd_toEndOf="@id/currLocIcon"
+            app:layout_constraintTop_toTopOf="@id/pinLoc"
+            android:scaleX="1.5"
+            android:scaleY="1.5"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
